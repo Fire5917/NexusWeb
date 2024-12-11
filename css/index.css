@@ -1,0 +1,354 @@
+/* index.css */
+
+main {
+    padding-top: 80px; /* To prevent content being hidden behind navbar */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.title {
+    font-size: 3em;
+    color: #cb6ae8;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.tagline {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fffefd;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.invite-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #55c2fe, #cb6ae8);
+    border: none;
+    border-radius: 25px;
+    color: #fffefd;
+    font-size: 1em;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(85, 194, 254, 0.5);
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.invite-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(85, 194, 254, 0.7);
+}
+
+/* Why NexusBot Section */
+.why-nexusbot {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 40px 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.why-nexusbot h2 {
+    font-size: 2em;
+    color: #55c2fe;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.why-nexusbot h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #cb6ae8;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.why-nexusbot p {
+    font-size: 1.1em;
+    color: #fffefd;
+}
+
+/* User Features Section */
+.user-features {
+    width: 80%;
+    max-width: 1200px;
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.user-category {
+    background-color: #1a1a1a;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(85, 194, 254, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-category:hover {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(85, 194, 254, 0.5);
+}
+
+.user-category h3 {
+    font-size: 1.5em;
+    color: #cb6ae8;
+    margin-bottom: 20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.feature-item .icon {
+    font-size: 2em;
+    color: #55c2fe;
+}
+
+.feature-content h4 {
+    font-size: 1.2em;
+    color: #cb6ae8;
+    margin-bottom: 5px;
+}
+
+.feature-content p {
+    font-size: 1em;
+    color: #fffefd;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin: 60px 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.call-to-action p {
+    font-size: 1.2em;
+    color: #fffefd;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #55c2fe, #cb6ae8);
+    border: none;
+    border-radius: 25px;
+    color: #fffefd;
+    font-size: 1em;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(85, 194, 254, 0.5);
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(85, 194, 254, 0.7);
+}
+
+/* Contact Section (Optional) */
+.contact {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin: 60px 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #55c2fe;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px 15px;
+    border: 1px solid #55c2fe;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fffefd;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #cb6ae8;
+    outline: none;
+}
+
+.contact form button {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #cb6ae8, #55c2fe);
+    border: none;
+    border-radius: 25px;
+    color: #fffefd;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(203, 106, 232, 0.7);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.title {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.tagline {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s;
+}
+
+.invite-button {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1.5s;
+}
+
+.why-nexusbot {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s;
+}
+
+.user-features {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2.5s;
+}
+
+.user-category {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.user-category:nth-child(1) {
+    animation-delay: 2.5s;
+}
+
+.user-category:nth-child(2) {
+    animation-delay: 2.7s;
+}
+
+.user-category:nth-child(3) {
+    animation-delay: 2.9s;
+}
+
+.user-category:nth-child(4) {
+    animation-delay: 3.1s;
+}
+
+.feature-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 3.3s;
+}
+
+.call-to-action {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 3.8s;
+}
+
+.contact {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 4.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features,
+    .why-nexusbot,
+    .user-features,
+    .call-to-action,
+    .contact {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2.5em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .invite-button,
+    .cta-button,
+    .community-button,
+    .contact form button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-item .icon {
+        font-size: 1.5em;
+    }
+
+    .user-category h3 {
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,123 @@
+/* commands.css */
+
+main {
+    padding-top: 80px; /* To prevent content being hidden behind navbar */
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 100vh;
+    background-color: #03030d;
+}
+
+.commands-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.commands-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #cb6ae8;
+    position: relative;
+}
+
+.commands-section h1::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #55c2fe;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Command Categories */
+.command-category {
+    margin-bottom: 40px;
+    background-color: #03030d;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(85, 194, 254, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.command-category:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(85, 194, 254, 0.5);
+}
+
+.command-category h2 {
+    margin-bottom: 25px;
+    color: #cb6ae8;
+    font-size: 1.8em;
+    position: relative;
+}
+
+.command-category h2::before {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #55c2fe;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+/* Commands Grid */
+.commands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.command-card {
+    background-color: #03030d;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #55c2fe;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: default;
+}
+
+.command-card:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(85, 194, 254, 0.5);
+}
+
+.command-card code {
+    display: block;
+    background-color: #1a1a1a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #55c2fe;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.command-card p {
+    font-size: 0.95em;
+    color: #fffefd;
+}
+
+/* Animations */
+/* Removed CSS animations to prevent conflicts with GSAP */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .commands-section h1 {
+        font-size: 2em;
+    }
+
+    .command-category h2 {
+        font-size: 1.3em;
+    }
+}
